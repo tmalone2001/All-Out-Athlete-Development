@@ -39,7 +39,7 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center my-5">
-                            <img src="assets/AO_logo-full-light2-large.png" class="img-fluid" alt="">
+                            <img src="assets/AO_logo-full-color-large.png" class="img-fluid" alt="">
                             <p class="lead text-white-50 mb-4">Welcome to Lincoln's premiere athletic development process led by a doctor that welcomes athletes at every stage of their journey. My specialized knowledge is evident in our customized movement assessments in order to fine-tune your training experiences and lead you to success in your sport. Beyond victories, I champion your comeback story by providing top-tier rehabilitation after sports injuries. Unleash your potential with me – whether you're starting out or a seasoned pro – and let's conquer new heights together. I integrate the latest advancements in biomechanics research and rehab concepts to continually elevate the techniques we use. Put simply: we go all in so our athletes can go all out.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
@@ -77,14 +77,20 @@
         <!-- About Me Section-->
         <section>
             <div class="about bg-light py-5">
-                <img src="assets/AO-headshot-1.jpg" class="pic">
-                <div class="text">
-                    <h2>About Me</h2>
-                    <strong><p>Adam Gentzler</p></strong>
-                    <p>I'm Adam Gentzler, a dedicated chiropractor driven by a passion to optimize athletes' movements that compliments their unique structures, sport(s), and positions. My childhood was filled with sports--mostly soccer and basketball--and sparked my love of competition.  After my years of playing team sports ended, I discovered endurance sports. I started competing in triathlons and then got hooked on running, especially ultra-distance trail running. Professionally, the entire spectrum of sports performance has captivated me. With a natural eye for movement, I've dedicated 13 years to refining my skills and techniques associated with hands-on treatments, movement analysis, injury rehabilitation, and athletic performance enhancement.  When I'm not working one-on-one with my athletes, I spend my time with my wife, Kari, and two children, Ethan and Emelia.  
-                    </p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-left">
-                        <a class="btn btn-secondary btn-lg px-4 me-sm-3" href="#contact">Contact Me</a>
+                <div class="aboutrow">
+                    <div class="aboutcol">
+                        <img src="assets/AO-headshot-1.jpg" class="pic">
+                    </div>
+                    <div class="aboutcol">
+                        <div class="text">
+                            <h2>About Me</h2>
+                            <strong><p>Adam Gentzler</p></strong>
+                            <p>I'm Adam Gentzler, a dedicated chiropractor driven by a passion to optimize athletes' movements that compliments their unique structures, sport(s), and positions. My childhood was filled with sports--mostly soccer and basketball--and sparked my love of competition.  After my years of playing team sports ended, I discovered endurance sports. I started competing in triathlons and then got hooked on running, especially ultra-distance trail running. Professionally, the entire spectrum of sports performance has captivated me. With a natural eye for movement, I've dedicated 13 years to refining my skills and techniques associated with hands-on treatments, movement analysis, injury rehabilitation, and athletic performance enhancement.  When I'm not working one-on-one with my athletes, I spend my time with my wife, Kari, and two children, Ethan and Emelia.  
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-left">
+                                <a class="btn btn-secondary btn-lg px-4 me-sm-3" href="#contact">Contact Me</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -476,29 +482,29 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="https://formsubmit.co/759b17bc571fcde6be5c24c51a3792ed" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -520,7 +526,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-dark btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>

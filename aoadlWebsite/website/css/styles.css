@@ -10967,3 +10967,21 @@ a:hover,a:focus{
 .text h5{
   margin-bottom: 20px;
 }
+
+.aboutrow{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.aboutcol{
+  width: 50%;
+  height: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutcol{
+      width: 100%;
+  }
+}
